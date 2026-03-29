@@ -11,6 +11,9 @@ import (
 
 	// Import our durable streams module
 	_ "github.com/durable-streams/durable-streams/packages/caddy-plugin"
+
+	// JWT authentication for stream access control
+	_ "github.com/ggicci/caddy-jwt"
 )
 
 const defaultCaddyfile = `{
