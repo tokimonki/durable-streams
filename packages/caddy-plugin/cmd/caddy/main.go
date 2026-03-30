@@ -14,6 +14,9 @@ import (
 
 	// JWT authentication for stream access control
 	_ "github.com/ggicci/caddy-jwt"
+
+	// Durable Streams authorisation (permissions, server-only methods)
+	_ "github.com/tokimonki/durable-streams-authorisation"
 )
 
 const defaultCaddyfile = `{

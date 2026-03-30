@@ -4,6 +4,8 @@ go 1.25
 
 require (
 	github.com/caddyserver/caddy/v2 v2.10.2
+	github.com/ggicci/caddy-jwt v1.1.2
+	github.com/tokimonki/durable-streams-authorisation v0.0.0-20260330125103-3f3d6da1e080
 	go.etcd.io/bbolt v1.4.3
 	go.uber.org/zap v1.27.1
 )
@@ -44,9 +46,7 @@ require (
 	github.com/dlclark/regexp2 v1.11.5 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
-	github.com/francoispqt/gojay v1.2.13 // indirect
 	github.com/fxamacker/cbor/v2 v2.8.0 // indirect
-	github.com/ggicci/caddy-jwt v1.1.2 // indirect
 	github.com/go-chi/chi/v5 v5.2.2 // indirect
 	github.com/go-jose/go-jose/v3 v3.0.4 // indirect
 	github.com/go-jose/go-jose/v4 v4.1.3 // indirect
@@ -142,7 +142,6 @@ require (
 	go.opentelemetry.io/proto/otlp v1.7.0 // indirect
 	go.step.sm/crypto v0.74.0 // indirect
 	go.uber.org/automaxprocs v1.6.0 // indirect
-	go.uber.org/mock v0.6.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap/exp v0.3.0 // indirect
 	go.yaml.in/yaml/v2 v2.4.3 // indirect
