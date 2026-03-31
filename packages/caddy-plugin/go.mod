@@ -5,7 +5,7 @@ go 1.25
 require (
 	github.com/caddyserver/caddy/v2 v2.10.2
 	github.com/ggicci/caddy-jwt v1.1.2
-	github.com/tokimonki/durable-streams-authorisation v0.0.0-20260330125103-3f3d6da1e080
+	github.com/tokimonki/durable-streams-authorisation v0.0.0-20260331035829-fe3c54ad5b98
 	go.etcd.io/bbolt v1.4.3
 	go.uber.org/zap v1.27.1
 )
@@ -71,7 +71,7 @@ require (
 	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
 	github.com/jackc/pgx/v5 v5.7.6 // indirect
 	github.com/jackc/puddle/v2 v2.2.2 // indirect
-	github.com/klauspost/compress v1.18.1 // indirect
+	github.com/klauspost/compress v1.18.5 // indirect
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
 	github.com/lestrrat-go/blackmagic v1.0.4 // indirect
 	github.com/lestrrat-go/dsig v1.0.0 // indirect
