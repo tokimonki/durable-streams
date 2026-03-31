@@ -28,11 +28,13 @@ or force-push these.
 | Commit | Description | Upstream PR | Drop when |
 |--------|-------------|-------------|-----------|
 | `f3c63ca` | Fix SSE streaming with forward_auth (`http.NewResponseController`) | [#253](https://github.com/durable-streams/durable-streams/pull/253) | Upstream merges #253 |
-| *(pending)* | Add `ggicci/caddy-jwt` module for local JWT verification | N/A (tokimonki-specific) | Never — permanent divergence |
+| `9b65b2c` | Add `ggicci/caddy-jwt` module for local JWT verification | N/A (tokimonki-specific) | Never — permanent divergence |
+| `073b6e0` | Add `tokimonki/durable-streams-authorisation` module for permission enforcement | N/A (tokimonki-specific) | Never — permanent divergence |
 
-The JWT module is a permanent addition. It allows Caddy to verify stream access
-tokens locally using a public key, eliminating the forward_auth callback to Rails
-that caused Puma thread deadlocks. See tokimonki-exchange issue for full context.
+The JWT and authorisation modules are permanent additions. caddy-jwt verifies stream
+access tokens locally using a public key, eliminating the forward_auth callback to
+Rails that caused Puma thread deadlocks. durable-streams-authorisation enforces
+read/write permissions and server-only methods on top of the authenticated identity.
 
 ## Syncing with upstream
 
